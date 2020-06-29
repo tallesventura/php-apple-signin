@@ -29,6 +29,13 @@ class ASDecoder {
         return new ASPayload($identityPayload);
     }
 
+    public static function getAppleSignInArray(string $identityToken): array
+    {
+
+        $identityPayload =  self::decodeIdentityToken($identityToken);
+        return (array) $identityPayload;
+    }
+
     /**
      * Decode the Apple encoded JWT using Apple's public key for the signing.
      *

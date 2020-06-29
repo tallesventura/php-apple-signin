@@ -12,6 +12,11 @@
         }
     ],
     "autoload": {
-        "psr-4": { "AppleSignIn\\": "" }
+        "psr-4": { "AppleSignIn\\": "src/" }
+    },
+    "require": {
+        "firebase/php-jwt": "^5.2.0",
+        "ext-json": "*",
+        "ext-openssl": "*"
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace AppleSignIn\Vendor;
+namespace AppleSignIn;
 use \DomainException;
 use Firebase\JWT\BeforeValidException;
 use Firebase\JWT\ExpiredException;
